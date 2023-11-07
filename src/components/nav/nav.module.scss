@@ -1,18 +1,17 @@
 div.container {
     max-width: 100vw;
-    border: 2px solid blue;
-    // display: flex;
+    // border: 2px solid blue;
     height: 90px;
 
     & div.blurry_overlay {
         backdrop-filter: blur(15px); /* Adjust the blur intensity as needed */
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(255, 255, 255, 0.3);
-      z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: -1;
     }
 
     & > div.content {
@@ -24,7 +23,7 @@ div.container {
         }
 
         & > div.logo {
-            border: 2px solid yellow;
+            // border: 2px solid yellow;
             display: flex;
     
             & > * {
@@ -32,7 +31,7 @@ div.container {
                 padding-left: 20px;
                 display: grid;
                 place-items: center;
-                border: 2px solid black;
+                // border: 2px solid black;
             }
     
             // & > div.icon {
@@ -45,18 +44,22 @@ div.container {
         }
     
         & > div.location {
-            border: 2px solid aqua;
+            // border: 2px solid aqua;
     
             & > ul {
                 marker: none;
                 width: auto;
-                border: 2px solid orange;
+                // border: 2px solid orange;
                 display: flex;
                 height: 100%;
                 justify-content: flex-end;
+
+                & > li:first-child {
+                    color: #3554F2
+                }
     
                 & > li {
-                    border: 2px solid red;
+                    // border: 2px solid red;
                     width: 150px;
                     display: grid;
                     place-items: center;
@@ -64,8 +67,4 @@ div.container {
             }
         }
     }
-
-    // & > div {
-    //     flex-basis: 50%;
-    // }
 }

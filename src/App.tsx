@@ -12,7 +12,9 @@ function App() {
         <Header />
       </section>
 
-      <section className="body"></section>
+      <section className={style.body}>
+        { Array(1000).fill('ABC')}
+      </section>
 
       <section className="footer"></section>
     </div>

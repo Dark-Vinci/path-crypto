@@ -1,17 +1,15 @@
 div.App {
   text-align: center;
-  border: 2px solid maroon;
+  // border: 2px solid maroon;
   min-height: 100vh;
   max-width: 100vw;
 
   & > * {
     width: 100vw;
-    // z-index: 1;
   }
 
   & > section.navigation {
     position: fixed;
-    // z-index: 2;
   }
 
   & > section.header {
@@ -19,5 +17,12 @@ div.App {
     word-wrap: break-word;
     background-color: yellow;
     margin-top: 90px;
+  }
+
+  & > section.body {
+    word-wrap: break-word;
+    background-color: blue;
+    width: 100vw;
+    height: 1000px;
   }
 }
