@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.scss';
+import style from './App.module.scss';
+import { Navigation, Header } from '@components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.App}>
+      <section className={style.navigation}>
+        <Navigation />
+      </section>
+
+      <section className={style.header}>
+        <Header />
+      </section>
+
+      <section className="body"></section>
+
+      <section className="footer"></section>
     </div>
   );
 }
