@@ -10,10 +10,6 @@ export function Body2(): JSX.Element {
             <div className={ style.cards }>
                 <div className={ style.card_1_container }>
                     <div className={ style.card1 }>
-                        <div className={ style.img }>
-                            <img src="" alt=""/>
-                        </div>
-
                         <div className={ style.word_content }>
                             <div className={ style.header }>
                                 <p>Let us build your portfolio</p>
@@ -44,6 +40,13 @@ export function Body2(): JSX.Element {
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <div className={ style.img }>
+                            <img 
+                                src="https://assets-global.website-files.com/62a0c3db69e9f31272bb38a0/6503252bde9516f279572661_image%20228-p-1080.png" 
+                                alt=""
+                            />
                         </div>
                     </div>
                 </div>

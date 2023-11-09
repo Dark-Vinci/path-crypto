@@ -19,7 +19,7 @@ div.container {
             border: 2px solid red;
         }
 
-        & div.card_1_container {
+        & > div.card_1_container {
             height: calc(100vh - 100px);
             border: 2px solid yellow;
             display: flex;
@@ -29,15 +29,28 @@ div.container {
             // border
 
             & > div.card1 {
-                border: 2px solid blue;
-                width: calc(100vw - 200px);
-                border-radius: 90px;
+                border: 2px solid rgb(0, 255, 85);
+                width: calc(100vw - 150px);
+                border-radius: 80px;
                 background-color: rgb(53,84,242);
                 height: calc(100vh - 200px);
                 display: flex;
-                // flex-direction: column;
 
-                & div > word_content {
+                & > div.img {
+                    flex: 40%;
+                    border: 2px solid rgb(255, 0, 200);
+                    overflow: hidden;
+
+                    & > img {
+                        padding-top: 50px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                & > div.word_content {
+                    flex: 60%;
                     border: 2px solid white;
                 }
             }
