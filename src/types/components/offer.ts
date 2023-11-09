@@ -1,4 +1,4 @@
-import { BaseProp } from "@types";
+import { BaseProp } from "../default";
 
 export interface OfferProps extends BaseProp {
     readonly src: string;
