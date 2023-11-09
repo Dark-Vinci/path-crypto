@@ -8,7 +8,7 @@ export function Body2(): JSX.Element {
             </div>
             
             <div className={ style.cards }>
-                <div className={ style.content }>
+                <div className={ style.card_1_container }>
                     <div className={ style.card1 }>
                         <div className={ style.img }>
                             <img src="" alt=""/>
@@ -47,7 +47,7 @@ export function Body2(): JSX.Element {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="card2"></div>
                 <div className="card3"></div>
             </div>
