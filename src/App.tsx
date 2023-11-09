@@ -1,5 +1,6 @@
 import style from './App.module.scss';
-import { Navigation, Header } from '@components';
+
+import { Navigation, Header, Body2, Body1 } from '@components';
 
 function App() {
   return (
@@ -13,10 +14,12 @@ function App() {
       </section>
 
       <section className={style.body}>
-        { Array(1000).fill('ABC')}
+        <Body1/>
       </section>
 
-      <section className="footer"></section>
+      <section className={style.body2}>
+        <Body2 />
+      </section>
     </div>
   );
 }
