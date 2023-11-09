@@ -1,0 +1,93 @@
+div.container {
+    // border: 2px solid yellow;
+    min-width: 100%;
+    min-height: calc(100vh + 1px);
+    display: flex;
+
+    flex-direction: column;
+
+    & > * {
+        border: 2px solid white;
+        margin-bottom: 50px;
+    }
+
+    & > div.offers {
+        width: 100vw;
+        // border: 2px solid black;
+        display: grod;
+        place-items: center;
+
+        & div.content {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & > div.feature {
+        width: 100%;
+        // border: 2px solid green;
+        display: flex;
+
+        // & > * {
+        //     // border: 2px solid tomato;
+        // }
+
+        & > div.title {
+            flex-basis: 20%;
+            display: grid;
+            place-items: center;
+        }
+
+        & > div.members {
+            height: 100px;
+            display: flex;
+            flex: 80%;
+
+            & > div {
+                // border: 2px solid green;
+                flex: auto;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    & div.header {
+        margin-top: 0;
+        display: grid;
+        place-items: center;
+        height: 120px;
+        margin-bottom: 40px;
+
+        & > div.header_container {
+            height: 100%;
+            width: 650px;
+            // border: 2px solid aqua;
+            display: flex;
+            border-radius: 30px;
+            background-color: rgb(238,247,239);
+            padding-left: 20px;
+            padding-right: 20px;
+
+            & > div.icon {
+                display: grid;
+                place-items: center;
+                flex: 120px;
+            }
+
+            & div.content {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // border: 2px solid black;
+                
+
+                & > * {
+                    // border: 2px solid silver;
+                    margin-top: 10px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

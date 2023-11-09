@@ -1,0 +1,45 @@
+div.container {
+    // border: 2px solid blue;
+    width: 340px;
+    min-height: 400px;
+    overflow: hidden;
+    color: rgb(47,49,88);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+        // border: 2px solid yellow;
+        width: 100%;
+        flex: 50%;
+    }
+
+    & > div.words {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        & > * {
+            height: auto;
+            // border: 2px solid green;
+        }
+
+        & div.title {
+            font-size: 20px;
+        }
+
+        & div.description {
+            color: rgb(47,49,88);
+            opacity: 0.9;
+        }
+    }
+
+    & > div.image {
+        img {
+            object-fit: cover;
+            object-position: 100% 100%;
+        }
+    }
+}
