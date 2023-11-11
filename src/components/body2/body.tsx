@@ -1,5 +1,10 @@
 import style from './body2.module.scss';
 
+import { PiWarningLight } from 'react-icons/pi'
+import { SlWallet } from 'react-icons/sl';
+import { BiCandles } from 'react-icons/bi'
+
+
 export function Body2(): JSX.Element {
     return (
         <div className={ style.container }>
@@ -12,33 +17,56 @@ export function Body2(): JSX.Element {
                     <div className={ style.card1 }>
                         <div className={ style.word_content }>
                             <div className={ style.header }>
-                                <p>Let us build your portfolio</p>
+                                <div className={ style.header_wrapper }>
+                                    <p>Let us build your portfolio</p>
+                                </div>
                             </div>
                             <div className={ style.description }>
-                                <h3>Automate your investing with Path Managed Portfolios.</h3>
+                                <div className={ style.description_wrapper }>
+                                    <h3>Automate your investing with Path Managed Portfolios.</h3>
+                                </div>
                             </div>
 
                             <div className={ style.button }>
-                                <button disabled>coming soon</button>
+                                <div className={ style.bb }>
+                                    <button disabled>Coming soon</button>
+                                </div>
                             </div>
 
                             <div className={ style.item_list }>
-                                <ul>
-                                    <li>
-                                        <div className={ style.icon }>warning</div>
-                                        <div className={ style.content }>Take a risk assessment</div>
-                                    </li>
+                                <div className={ style.wrapper }>
+                                    <ul>
+                                        <li>
+                                            <div className={ style.icon }>
+                                                <SlWallet
+                                                    color='rgb(19,222,173)'
+                                                    size={"30px"}
+                                                />
+                                            </div>
+                                            <div className={ style.content }>Get your personalized portfolio</div>
+                                        </li>
 
-                                    <li>
-                                        <div className={ style.icon }>wallet</div>
-                                        <div className={ style.content }>Get your personalized portfolio</div>
-                                    </li>
+                                        <li>
+                                            <div className={ style.icon }>
+                                                <BiCandles
+                                                    color='rgb(19,222,173)'
+                                                    size={"30px"}
+                                                />
+                                            </div>
+                                            <div className={ style.content }>Sit back and let us do the work</div>
+                                        </li>
 
-                                    <li>
-                                        <div className={ style.icon }>candle</div>
-                                        <div className={ style.content }>Sit back and let us do the work</div>
-                                    </li>
-                                </ul>
+                                        <li>
+                                            <div className={ style.icon }>
+                                                <PiWarningLight
+                                                    color='rgb(19,222,173)'
+                                                    size={"30px"}
+                                                />
+                                            </div>
+                                            <div className={ style.content }>Take a risk assessmentahsjskjsk</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
