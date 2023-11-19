@@ -3,7 +3,6 @@ import { uid } from 'uid';
 import style from './body3.module.scss'
 import { Tdata } from '@types';
 import { IoRadioButtonOnSharp, IoRadioButtonOffSharp } from "react-icons/io5";
-// import { IoRadioButtonOffSharp } from "react-icons/io5";
 
 export function Body3(): JSX.Element {
     const tableValues: Array<Tdata> = [
