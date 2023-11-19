@@ -12,7 +12,6 @@ import { MdOutlineAdsClick } from "react-icons/md";
 
 
 export function Body2(): JSX.Element {
-    console.log({ style })
     return (
         <div className={ style.container }>
             <div className={ style.header }>
