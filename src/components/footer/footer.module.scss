@@ -34,5 +34,28 @@ div.container {
     & > div.header {
         border: 2px solid chartreuse;
         min-height: 300px;
+        // width: 100%;
+
+        & > div.header_wrapper {
+            border: 2px solid green;
+            display: flex;
+            width: 100%;
+
+            & > div.header_left {
+                border: 2px solid yellow;
+                flex-basis: 35%;
+                
+                & > * {
+                    // margin-bottom: 30px;
+                    text-align: left;
+                    border: 2px solid red;
+                }
+            }
+
+            & > div.header_right {
+                border: 2px solid aqua;
+                flex-basis: 65%;
+            }
+        }
     }
 }
