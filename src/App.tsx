@@ -1,6 +1,6 @@
 import style from './App.module.scss';
 
-import { Navigation, Header, Body2, Body1 } from '@components';
+import { Navigation, Header, Body2, Body1, Body3 } from '@components';
 
 function App() {
   return (
@@ -19,6 +19,10 @@ function App() {
 
       <section className={style.body2}>
         <Body2 />
+      </section>
+
+      <section className={ style.body3 }>
+        <Body3 />
       </section>
     </div>
   );
