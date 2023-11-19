@@ -1,4 +1,3 @@
-import React from 'react';
 import { uid } from 'uid';
 
 import style from './body3.module.scss'
