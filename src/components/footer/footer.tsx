@@ -8,7 +8,7 @@ export function Footer(): JSX.Element {
                     <div className={ style.header_left }></div>
                     <div className={ style.header_right }>
                         <div className={ style.right_wrapper }>
-
+                                header
                         </div>
                     </div>
                 </div>
