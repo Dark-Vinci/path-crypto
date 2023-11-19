@@ -1,5 +1,9 @@
 import style from './footer.module.scss';
 
+import { RiInstagramLine } from "react-icons/ri";
+import { IoLogoTwitter } from "react-icons/io5";
+import { FaFacebookSquare } from "react-icons/fa";
+
 export function Footer(): JSX.Element {
     return (
         <div className={ style.container }>
@@ -22,9 +26,46 @@ export function Footer(): JSX.Element {
 
                     <div className={ style.header_right }>
                         <div className={ style.right_wrapper }>
-                            <div className={ style.first }></div>
-                            <div className={ style.second }></div>
-                            <div className={ style.third }></div>
+                            <div className={ style.first }>
+                                <ul>
+                                    <li><a href=".">Contact</a></li>
+                                    <li><a href=".">Careers</a></li>
+                                    <li><a href=".">Cookie Settings</a></li>
+                                </ul>
+                            </div>
+
+                            <div className={ style.second }>
+                                <ul>
+                                    <li><a href=".">Terms and Conditions</a></li>
+                                    <li><a href=".">Privacy Policy</a></li>
+                                    <li><a href=".">Risk Disclosures</a></li>
+                                </ul>
+                            </div>
+
+                            <div className={ style.third }>
+                                <ul>
+                                    <li>
+                                        <div className="icon">
+                                            <RiInstagramLine />
+                                        </div>
+                                        <p>Instagram</p>
+                                    </li>
+
+                                    <li>
+                                        <div className="icon">
+                                            <IoLogoTwitter />
+                                        </div>
+                                        <p>Twitter</p>
+                                    </li>
+
+                                    <li>
+                                        <div className="icon">
+                                            <FaFacebookSquare />
+                                        </div>
+                                        <p>Facebook</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
