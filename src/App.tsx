@@ -25,7 +25,7 @@ function App() {
         <Body3 />
       </section>
 
-      <section className="footer">
+      <section className={ style.footer }>
         <Footer />
       </section>
     </div>
