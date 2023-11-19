@@ -4,3 +4,4 @@ export * from './header';
 export * from './body';
 export * from './body2';
 export * from './body3';
+export * from './footer';
