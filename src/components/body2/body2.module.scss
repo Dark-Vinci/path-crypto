@@ -1,7 +1,7 @@
 div.container {
     // border: 2px solid green;
     max-width: 100vw;
-    height: 1000px;
+    // height: 1000px;
     color: rgb(47,49,88);
 
     & > div.header {
@@ -12,20 +12,167 @@ div.container {
     }
 
     & div.cards {
-        height: 10000px;
+        // height: 10000px;
 
         & > * {
             height: 1000px;
-            border: 2px solid red;
-        }
-
-        & > div.card_1_container {
+            // border: 2px solid red;
             height: calc(100vh - 100px);
-            // border: 2px solid yellow;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        & > div.card_2_container {
+            // border: 2px solid green;
+
+            & > div.card2 {
+                // border: 2px solid yellow;
+                width: calc(100vw - 150px);
+                border-radius: 80px;
+                background-color: #F5F6FA;
+                height: calc(100vh - 160px);
+                display: flex;
+
+                & > div.img {
+                    flex: 40%;
+                    // border: 2px solid rgb(40, 10, 71);
+                    overflow: hidden;
+                    margin-left: 130px;
+                    width: 100%;
+
+                    & > img {
+                        padding-top: 50px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        // border: 2px solid white;
+                    }
+                }
+
+                & > div.word_content {
+                    height: 100%;
+                    flex: 60%;
+                    // border: 10px solid rgb(43, 136, 170);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    & > * {
+                        width: 100%;
+                    }
+
+                    & > div.header {
+                        margin-top: 50px;
+                        // border: 2px solid red;
+                        display: flex;
+                        justify-content: flex-start;
+
+                        & div.header_wrapper {
+                            margin-left:20px;
+                            // outline: 2px solid orange;
+                            // border: 2px solid green;
+                            width: 300px;
+                            text-align: left;
+                            color: rgb(27, 10, 160);
+                        }
+                    }
+
+
+                    & > div.button {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        // border: 2px solid yellow;
+
+                        & > div.bb {
+                            // border: 2px solid orange;
+                            margin-left:20px;
+
+                            & > button {
+                                color: white;
+                                font-size: 20px;
+                                width: 270px;
+                                height: 65px;
+                                border-radius: 50px;
+                                border: none;
+                                background-color: rgb(190,190,190);
+                            }
+                        }
+                    }
+
+                    & > div.description {
+                        height: auto;
+                        display: flex;
+
+                        & > div.description_wrapper {
+                            margin-left:20px;
+                            // border: 2px solid white;
+                            width: 500px;
+                            color: black;
+                            height: auto;
+                            
+                            & > h3 {
+                                font-size: 50px;
+                                text-align: start;
+                            }
+                        }
+                    }
+
+                    & > div.item_list {
+                        // border: 2px solid white;
+                        height: auto;
+                        flex-basis: 30%;
+
+                        & > div.wrapper {
+                            // border: 2px solid aqua;
+                            width: 500px;
+                            margin-left:20px;
+                            height: auto;
+
+                            & > ul {
+                                // border: 2px solid gray;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                color: black;
+
+                                & > li {
+                                    display: flex;
+                                    // border: 2px solid white;
+                                    height: 50px;
+
+                                    & > div {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                    }
+
+                                    & > div.icon {
+                                        flex: 10%;
+                                        // border: 2px solid green;
+                                    }
+
+                                    & > div.content {
+                                        flex: 90%;
+                                        // border: 2px solid wheat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & > div.card_1_container {
+            // border: 2px solid rgb(0, 60, 255);
 
             & > div.card1 {
                 // border: 2px solid rgb(0, 255, 85);
@@ -56,14 +203,9 @@ div.container {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-around;
-                    // margin-bottom: px;
-
-                    // padding-bottom: 20px;
 
                     & > * {
                         width: 100%;
-                        // margin-bottom: 10px;
-                        // height: 100%;
                         // border: 2px solid rgb(120, 48, 48);
                     }
 
@@ -117,7 +259,6 @@ div.container {
 
                     & > div.description {
                         // border: 2px solid black;
-                        // flex-basis: 100px;
                         height: auto;
                         display: flex;
 
@@ -167,6 +308,149 @@ div.container {
                             margin-left: 130px;
                             text-align: left;
                             color: rgb(149,214,246);
+                        }
+                    }
+                }
+            }
+        }
+
+        & > div.card_3_container {
+            & > div.card3 {
+                // border: 2px solid rgb(0, 255, 85);
+                width: calc(100vw - 150px);
+                border-radius: 80px;
+                background-color: #F5F6FA;
+                height: calc(100vh - 160px);
+                display: flex;
+
+                & > div.img {
+                    flex: 50%;
+                    // border: 2px solid rgb(255, 0, 200);
+                    overflow: hidden;
+
+                    & > img {
+                        padding-top: 50px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        bottom: 0px;
+                        position: relative;
+                        // border: 2px solid green;
+                    }
+                }
+
+                & > div.word_content {
+                    height: 100%;
+                    flex: 60%;
+                    // border: 2px solid rgb(43, 136, 170);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    & > * {
+                        width: 100%;
+                        // border: 2px solid rgb(120, 48, 48);
+                    }
+
+                    & > div.item_list {
+                        // border: 2px solid white;
+                        height: auto;
+                        flex-basis: 30%;
+
+                        & > div.wrapper {
+                            // border: 2px solid aqua;
+                            width: 500px;
+                            margin-left:130px;
+                            height: auto;
+
+                            & > ul {
+                                // border: 2px solid gray;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                color: black;
+
+                                & > li {
+                                    display: flex;
+                                    // border: 2px solid white;
+                                    height: 50px;
+
+                                    & > div {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                    }
+
+                                    & > div.icon {
+                                        flex: 10%;
+                                        // border: 2px solid green;
+                                    }
+
+                                    & > div.content {
+                                        flex: 90%;
+                                        // border: 2px solid wheat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & > div.description {
+                        // border: 2px solid black;
+                        height: auto;
+                        display: flex;
+
+                        & > div.description_wrapper {
+                            margin-left: 130px;
+                            // border: 2px solid white;
+                            width: 500px;
+                            color: black;
+                            height: auto;
+                            
+                            & > h3 {
+                                font-size: 50px;
+                                text-align: start;
+                            }
+                        }
+                    }
+
+                    & > div.button {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        // border: 2px solid yellow;
+
+                        & > div.bb {
+                            // border: 2px solid orange;
+                            margin-left: 130px;
+
+                            & > button {
+                                color: white;
+                                font-size: 20px;
+                                width: 270px;
+                                height: 65px;
+                                border-radius: 50px;
+                                border: none;
+                                background-color: rgb(190,190,190);
+                            }
+                        }
+                    }
+
+                    & > div.header {
+                        margin-top: 100px;
+                        // border: 2px solid red;
+
+                        & div.header_wrapper {
+                            // border: 2px solid green;
+                            width: 300px;
+                            margin-left: 130px;
+                            text-align: left;
+                            color: blue;
+                            font-size: 20px;
                         }
                     }
                 }
