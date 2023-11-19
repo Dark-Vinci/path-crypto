@@ -1,13 +1,8 @@
 import React from 'react';
-
-import style from './body3.module.scss'
 import { uid } from 'uid';
 
-interface Tdata {
-    feature: string;
-    path: boolean;
-    exchanges: boolean;
-}
+import style from './body3.module.scss'
+import { Tdata } from '@types';
 
 export function Body3(): JSX.Element {
     const tableValues: Array<Tdata> = [
