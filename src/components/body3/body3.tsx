@@ -2,6 +2,8 @@ import { uid } from 'uid';
 
 import style from './body3.module.scss'
 import { Tdata } from '@types';
+import { IoRadioButtonOnSharp, IoRadioButtonOffSharp } from "react-icons/io5";
+// import { IoRadioButtonOffSharp } from "react-icons/io5";
 
 export function Body3(): JSX.Element {
     const tableValues: Array<Tdata> = [
@@ -25,12 +27,17 @@ export function Body3(): JSX.Element {
             <div className={ style.table }>
                 <div className={ style.table_wrapper }>
                     <table>
-                        <thead>
+                        <thead  className={ style.table_header}>
                             <tr className={style.head}>
                                 <td>Features</td>
                                 <td>
-                                    <div className={ style.path_logo}></div>
-                                    <p>Path</p>
+                                    <div className={ style.path_logo}>
+                                        <img 
+                                            src="https://assets-global.website-files.com/62a0c3db69e9f31272bb38a0/6329fe611a33acfb8529f09d_Path-logo.svg" 
+                                            alt=""
+                                            loading='lazy'
+                                        />
+                                    </div>
                                 </td>
                                 <td>Crypto Exchanges</td>
                             </tr>
@@ -42,8 +49,32 @@ export function Body3(): JSX.Element {
                                     return (
                                         <tr key={uid()}>
                                             <td>{ val.feature }</td>
-                                            <td><input type="radio" name="" checked={val.path}/></td>
-                                            <td><input type="radio" name="" checked={val.exchanges}/></td>
+                                            <td>
+                                                { 
+                                                    val.path ? 
+                                                        <IoRadioButtonOnSharp 
+                                                            color='blue'
+                                                            size={'30px'}
+                                                        /> : 
+                                                        <IoRadioButtonOffSharp 
+                                                            color='blue'
+                                                            size={'30px'}
+                                                        />
+                                                }
+                                            </td>
+                                            <td>
+                                                { 
+                                                        val.exchanges ? 
+                                                            <IoRadioButtonOnSharp 
+                                                                color='blue'
+                                                                size={'30px'}
+                                                            /> : 
+                                                            <IoRadioButtonOffSharp 
+                                                                color='blue'
+                                                                size={'30px'}
+                                                            />
+                                                }
+                                            </td>
                                         </tr>
                                     )
                                 })
